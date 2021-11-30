@@ -1,0 +1,18 @@
+.divClass h1 {
+    color: red;
+}
+. .divClass span {
+    font-size: 18px;
+    margin: 50px;
+}
+.thirdDiv {
+    height: 600px;
+    width: 500px;
+    background-color: aqua;
+    padding: 50px;
+    border: 3px solid blue;
+    border-radius: 4px;
+}
+img {
+    width: 400px;
+}
