@@ -1,171 +1,80 @@
-# Homework: Git
+# Homework: HTML
 
-### Pre-requisitos
+Ahora que nos ha visto crear un archivo HTML y una hoja de estilo externa, crearas una propia.
 
-* Crear una cuenta en [Github.com](https://www.github.com/).
-* Si usas una computadora con Windows, puedes instalar la terminal de comandos _git-bash_ haciendo click [acá](https://git-for-windows.github.io/).
-* Si usas Mac, `git` viene pre-instalado y puedes acceder desde la terminal pulsando ⌘+Espacio y escribiendo "terminal". Puedes asegurarte de que git está instalado escribiendo `which git` en la terminal y pulsando Enter, si aparece la ruta de un archivo está todo correcto. En algunas ocasiones, podrías ser redireccionado a la descarga de la línea de comandos de Xcode, sigue las instrucciones.
-* Si usas Linux, tal vez necesites instalar git accediendo a tu terminal e ingresado `apt-get install git`
-* Si tienes problemas instalando Git, este recurso puede servir de ayuda: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+## Ejercicio I
 
-
-### Comandos básicos de terminal
-
-> Usaremos la "terminal" o "línea de comandos" durante tu tiempo en Henry. Si estás en una computadora con Mac o Linux, deberías tener la terminal y git ya instalados. Si estás en una máquina con Windows, te recomendamos instalar ["git-bash"](https://git-for-windows.github.io/).
-
-Dentro de nuestra terminal podemos: revisar nuestra estructura de archivos, añadir, eliminar y modificar archivos, y muchas cosas más. La terminal es una herramienta muy poderosa para los desarrolladores y vas a usarla mucho en tu carrera profesional. Al principio puede parecer aterrador, pero con el tiempo terminarás disfrutando su uso, así que es mejor acostumbrarse ahora. Para comenzar, aprenderemos los comandos "básicos":
-
-"List": Nos permite ver el contenido de la carpeta donde nos encontramos.
-```bash
-  $ ls
+Crear un nuevo archivo dentro de la carpeta `homework` llamado `homework.html` donde deberás realizar lo siguiente:
+```
+I. Cree una página HTML básica.
+  A. Cree el diseño básico para una página HTML usando html, head y body.
+  B. Agregue un elemento de título y asigne a su página el título de "Tarea HTML de [Su nombre]".
+  C. En el cuerpo, crea tres divs.
+    1. En el primer div crea:
+      * un elemento h1 que contiene [Tu nombre].
+      * un elemento h3 que contiene "Henry".
+      * un elemento h4 que contiene "tarea de HTML / CSS".
+    2. En el segundo div crea:
+      * un elemento span que contiene texto que describe su comida favorita.
+      * un elemento 'a' que se vincula a su restaurante favorito.
+    3. En el tercer div crea:
+      * una lista desordenada con dos elementos dentro de la lista
+      * una etiqueta img en cada elemento de la lista que se vincula a su comida favorita. (Use la búsqueda de imágenes de Google para encontrar una foto y copiar la dirección de la misma o sino puede usar esta: "https://i.picsum.photos/id/1080/400/200.jpg").
 ```
 
-
-"Change Directory": Nos permite movernos a una nueva carpeta o "directorio"
-```bash
-  $ cd [carpeta]
+```
+II Añade un poco de estilo
+  A. Agregue la etiqueta de estilo a su documento HTML.
+  B. Asignar al tercer div el id "thirdDiv".
+  C. Asignar a los otros divs la clase "divClass".
+  D. Asignar al span que se encuentra dentro de su segundo div el id "spanId".
+  E. Agregue una regla de estilo a su elemento h1 cambiando el color del texto (Listado de colores: https://www.crockford.com/wrrrld/color.html).
+  F. Agregue una regla de estilo al elemento img dándole un ancho de 400px.
+  G. Agregue una regla de estilo a 'thirdDiv' cambiando la altura a 600px y el ancho a 500px.
+  H. Agregue una regla de estilo a 'thirdDiv' cambiando el color de fondo por el que quiera.
+  I. Cambie el tamaño de la fuente para 'spanId' a 18px.
+  J. Asignar al id 'spanId' un margen de 50px.
+  K. Asignar al id 'thirdDiv' un relleno (padding) de 50px.
+  L. Asignar al id 'thirdDiv' un borde con cualquier ancho de color y estilo que elija.
 ```
 
-"Make Directory": Crea una nueva carpeta en el directorio donde nos encontramos actualmente.
-```bash
-  $ mkdir [nombre de la carpeta]
+```
+III. Cree una hoja de estilo externa y mueva todas las reglas de estilo anteriores a la nueva hoja de estilo.
+  A. Cree un archivo llamado styles.css en esta carpeta.
+  B. COPIE todas sus reglas de estilo en este nuevo archivo.
+  C. Agregue una etiqueta de enlace a su html que importe su nuevo archivo css.
 ```
 
-"Touch" creará un nuevo archivo.
-```bash
-  $ touch [nombre del archivo]
+```
+IV. Suba su trabajo a su repositorio de github`
 ```
 
-"Remove": Elimina permanentemente un archivo. ¡CUIDADO! Esto traspasa cualquier "papelera de reciclaje" que exista en el sistema y elimina los archivos PERMANENTEMENTE. Como nota, esto no eliminará carpetas, necesitamos un comando especial para eso que aprenderemos más adelante.
+### Crédito adicional:
+>   Para hacer los extra credits, generalmente será necesario que investigue algunas cosas por su cuenta en Internet.
 
-```bash
-  $ rm [nombre del archivo]
+  * Establecer una imagen como fondo de toda la página
+  * Centrar los div en la página
+  * Centrar todos los elementos en la página
+  * [Lea sobre el posicionamiento y use la regla de posición en sus estilos](https://es.learnlayout.com/index.html)
+  * Lea sobre flexbox y use flexbox para centrar todos los elementos en la página
+
+## Ejercicio II
+
+```
+Usando lo que aprendiste de HTML vas a crear un nuevo documento dentro de la carpeta de 'homework' llamado 'cv.html'. En el mismo vas crear tu propio Curriculum, deberá tener las siguientes secciones:
+
+* Titulo
+* Descripción Personal
+* Educación
+* Experiencias Laborales
+* Skills
+* Tu foto
+* Hobbies
+
+Además agregá una sección más donde expliques por qué estás estudiando esta carrera y cuáles son tus expectativas al finalizar la carrera.
+
+Subir también este archivo a su repositorio de github
+
 ```
 
-## Ejercicio
-
-En este ejercicio crearemos un nuevo repositorio en Github y a partir de la linea de comandos crearemos un nuevo archivo y lo agregaremos a nuestro nuevo repositorio.
-
-Iniciaremos creando una carpeta desde la consola llamada: "CarpetaHenry"
-
-Para ello primero iremos a la carpeta de nivel superior, escribe en la consola:
-
-```bash
-  cd ~
-```
-
-y presiona Enter. Una vez estés en el nivel superior, escribe:
-
-```bash
-  mkdir CarpetaHenry
-```
-
-y presiona Enter. ¡Felicitaciones, has creado un directorio!
-
-### Crear un Repositorio
-
-Entra a github.com y logueate con tu usuario. Luego en la parte de arriba a la derecha buscá el signo '+' y elegí 'new repository'.
-
-![alt](../img/repo-create.png)
-
-En la nueva pantalla, vas a tener que seleccionar el nombre de tu nuevo repo. Crea un repo que se llame: `repositorio-henry`. Podes agregarle una descripción también, pero no es obligatoria.
-
-![alt](../img/create-repository-name.png)
-
-Luego elegí la visibilidad del proyecto como público (para tener repos privados tenes que pagar el premium de github).
-
-Por último haz clic en **Crear repositorio**.
-
-Listo ya tenes tu propio repo. Ahora vas a poder clonarlo con las intrucciones de más abajo.
-
-### Clonar
-
-Para poder trabajar en un proyecto debes clonarlo (descargarlo) a tu máquina local. Para ello, accede al repositorio que creaste en tu cuenta, y haz click en el botón de la esquina superior derecha que dice "Clonar o descargar". Un dropdown aparecerá y podemos clickear en el icono del clipboard para copiar la dirección del repo. O, si el repo esta vacio vas a ver en el medio de la pantalla la URL con la dirección de tu repositorio.
-
-Una vez tengas la dirección copiada, abre una terminal nueva y escribe lo siguiente:
-
-
-```bash
-  $ cd ~
-
-  $ cd CarpetaHenry
-
-  $ git clone [dirección copiada]
-```
-
-Esto descargará el repositorio y tendrás disponible una copia local guardada en tu máquina.
-
-### Comandos de git:
-
-Durante estas lecciones interactuaremos con git a través de la terminal. En el futuro, podrías estar interesado en usar una interfaz visual/gráfica, pero durante estas lecciones necesitaremos usar la terminal para acceder a todas las funciones de git.
-
-En este ejercicio, añadiremos un archivo a nuestro proyecto y crearemos un commit para cambiar la "memoria" de git.
-
-A continuación, escribe lo siguiente en tu terminal:
-
-```bash
-  $ cd repositorio-henry
-  
-  $ touch archivo-ejemplo.js
-```
-
-Esto añadirá un nuevo archivo llamado "archivo-ejemplo.js" a tu proyecto.
-
-En este momento, podemos usar el comando de git "status", esto nos mostrará los cambios hechos en el repositorio local. Usa "status" si no estás seguro de que algo haya funcionado y necesitas saber qué pasó.
-
-```bash
-  $ git status
-```
-
-Deberías ver algo parecido a estas líneas:
-
-```bash
-  Changes not staged for commit:
-    (use "git add <file>..." to update what will be committed)
-    (use "git checkout -- <file>..." to discard changes in working directory)
-
-    modified:   README.md
-
-  Untracked files:
-    (use "git add <file>..." to include in what will be committed)
-
-    archivo-ejemplo.js
-
-  no changes added to commit (use "git add" and/or "git commit -a")
-```
-
-Esto nos dice que tenemos un archivo que ha cambiado, pero todavía no ha sido guardado en el historial de git.
-
-Para hacer esto, usaremos el comando "add":
-
-
-```bash
-  git add archivo-ejemplo.js
-```
-
-Esto agregó nuestros cambios al historial. Ahora, para guardar el historial, usaremos el comando "commit". Commit agarrará todos nuestros cambios y los guardará en el historial de git. Para futuras referencias, podrás añadir un mensaje acerca de los cambios hechos, esto facilitará ir atrás en el historial y encontrar los cambios que vos (o cualquiera) busque en el futuro en caso de necesitarlo. Siempre es una buena idea hacer una descripción clara y concisa de los cambios. Un _shorthand_ para añadir un mensaje, es usar la bandera (flag) "-m" y escribir el mensaje a continuación usando comillas.
-
-```bash
-  git commit -m 'Agregado nuevo archivo, archivo-ejemplo.js'
-```
-
-Ahora que guardamos nuestros cambios localmente, vamos a querer compartir esos cambios en Github. Para ello, usaremos "push":
-
-```bash
-  git push
-```
-
-La terminal te preguntará tu usuario y contraseña (En el caso de la contraseña cuando la estemos escribiendo por consola, por cuestiones de seguridad no se verá lo que estamos escribiendo). Escribimos estos datos y a continuación le damos enter y veremos un mensaje si todo fue "pusheado" correctamente:
-
-```bash
-  Counting objects: 5, done.
-  Delta compression using up to 8 threads.
-  Compressing objects: 100% (4/4), done.
-  Writing objects: 100% (5/5), 2.97 KiB | 0 bytes/s, done.
-  Total 5 (delta 1), reused 0 (delta 0)
-  remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-  To git@github.com:[your username]/Precourse.git
-    cccc682..283b9dd  master -> master
-```
-
-¡Felicitaciones, acabas de subir tu primer git commit!
+> Para este ejercicio vos vas a tener que elegir que **tags** html usar para darle la mejor estructuración al html. Acordate que en el futuro vamos a ver más en profundidad los estilos CSS, por lo que por ahora no te preocupes tanto del layout más allá de las reglas básicas.
