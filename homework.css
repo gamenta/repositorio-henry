@@ -58,19 +58,19 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 7. */
 #ejercicioSiete {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
 }
 #elementoUno {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-self: flex-start;
 }
 #elemetoDos {
-    flex-direction: column;
+    align-self: flex-end;
 }
 #elementoTres {
-
+    align-self: flex-end;
 }
 #elementoCuatro {
-
+  align-self: flex-start;
 }
